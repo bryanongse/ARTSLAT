@@ -117,7 +117,7 @@
 
 
   // Trainer Variables
-  var alphaindex = math.randomInt(0,21) //To initialise the first word
+  var alphaindex = math.randomInt(0,19) //To initialise the first word
   var alphabet_coords = data[alphaindex]
 
 
@@ -223,13 +223,13 @@
 
       // Write letter
       canvasCtx.font = "bolder 90px Arial";
-      canvasCtx.fillStyle = "#DE6B48";
-      canvasCtx.fillText(letter, 640, 90);
+      canvasCtx.fillStyle = "#00ff00";
+      canvasCtx.fillText(letter, 640, 100);
 
 
-      // Check if user succeded
+      // Check if user succeded ====================================================
       if (letter == alphabet_coords[0]) {
-        alphaindex = math.randomInt(0,21) //To initialise the first word
+        alphaindex = math.randomInt(0,19) //To initialise the first word
         alphabet_coords = data[alphaindex]
       }
 
