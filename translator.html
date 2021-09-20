@@ -107,7 +107,7 @@
     canvasCtx.drawImage(
         results.image, 0, 0, canvasElement.width, canvasElement.height);
 
-    if (results.multiHandLandmarks) {
+    if (Object.keys(results.multiHandLandmarks).length != 0) {
 
       //Predict
       var normalised_landmarks = Normalise(results.multiHandLandmarks, canvasElement.height, canvasElement.width);
