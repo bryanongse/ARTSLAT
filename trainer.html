@@ -68,6 +68,7 @@
       </div></header> 
 
     <div class="container">
+    <img id="stillImg" src="ASL_Pics/S.jpg" class="center">
     <canvas class="output_canvas"  width="1280px" height="720px">
       <video class="input_video"></video>
     </canvas>
@@ -84,6 +85,8 @@
   const videoElement = document.getElementsByClassName('input_video')[0];
   const canvasElement = document.getElementsByClassName('output_canvas')[0];
   const canvasCtx = canvasElement.getContext('2d');
+
+  var image = document.getElementById("stillImg");
 
 
   const classconversion = {0: 'A', 1: 'B', 2: 'C', 3: 'D', 4: 'E', 5: 'F', 6: 'G', 7: 'H',
@@ -231,6 +234,7 @@
       if (letter == alphabet_coords[0]) {
         alphaindex = math.randomInt(0,19) //To initialise the first word
         alphabet_coords = data[alphaindex]
+        image.src = 'ASL_Pics/' + data[alphaindex][0] + '.jpg'
       }
 
 
@@ -296,6 +300,7 @@
 
 
   camera.start();
+
 
 
 </script>

@@ -4,3 +4,9 @@ canvas {
   margin-right: auto;
   width: 80%;
 }
+.center {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 7%;
+}
